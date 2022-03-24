@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .sidebar
+      ul(class="sidebar-nav")
+        li
+          a(href="/catalog") Home
+        li
+          a(href="/catalog/categories") All Categories
+        li
+          a(href="/catalog/items") All Items
+        li
+          a(href="/catalog/category/create") Create new category 
+        li
+          a(href="/catalog/item/create") Create new item
+    .main
+      block content

@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+    h1= title 
+    ul 
+        each item in items 
+            li
+                a(href=item.url) #{item.name}
+                p #[strong Category:] #{item.category.name}
+                p= item.description
+
+        else
+            p There are no items.

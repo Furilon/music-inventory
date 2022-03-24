@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  if error 
+    p Error creating dynamic content.
+  else
+    p Inventory has the following count: 
+
+    ul 
+      li #[strong Categories:] !{data.categories_count}
+      li #[strong Items:] !{data.items_count}

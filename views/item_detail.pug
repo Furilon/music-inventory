@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    h1= title 
+    h3= item.name 
+    h5= item.category.name 
+    p= item.description
+    p #[strong Number of items in stock:] #{item.number_in_stock} 
+    p #[strong Price:] $#{item.price}
+
+    hr
+    p
+        a(href=item.url+"/update") Update
+    p
+        a(href=item.url+"/delete") Delete
