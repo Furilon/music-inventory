@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // mongoose connection
-const mongoDB = "mongodb+srv://furilon:ybrbnjc3388@inventory.vl7m4.mongodb.net/Inventory?retryWrites=true";
+const mongoDB = "look up your inventory db";
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, "MongoDB connection error"));
