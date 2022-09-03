@@ -6,6 +6,7 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const compression = require('compression');
+require('dotenv').config()
 
 const indexRouter = require('./routes/index');
 const catalogRouter = require('./routes/catalog');
@@ -17,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // mongoose connection
-const mongoDB = "look up your inventory db";
+const mongoDB = process.env.DB_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, "MongoDB connection error"));
