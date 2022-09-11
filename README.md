@@ -12,13 +12,7 @@ I wanted to practice building RESTish API and, generally, a CRUD application.
 - MongoDB and mongoose
 - PUG template language
 
-# Installation
-To install, fork and clone the repository on your local machine, then \
-`npm install`
-
 # How to use?
-Either via `npm run startdev` and go to `localhost:3000` \
-or \
 [Live Heroku version](#)
 
 
