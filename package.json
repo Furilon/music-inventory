@@ -1,28 +1,31 @@
 {
-  "name": "music-inventory",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=music-inventory:* npm run devstart"
-  },
-  "dependencies": {
-    "async": "^3.2.3",
-    "compression": "^1.7.4",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "dotenv": "^16.0.2",
-    "express": "~4.16.1",
-    "express-validator": "^6.14.0",
-    "helmet": "^5.0.2",
-    "http-errors": "~1.6.3",
-    "mongoose": "^6.2.7",
-    "morgan": "~1.9.1",
-    "multer": "^1.4.5-lts.1",
-    "pug": "2.0.0-beta11"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "name": "music-inventory",
+    "version": "0.0.0",
+    "private": true,
+    "engines": {
+        "node": "14.17.0"
+    },
+    "scripts": {
+        "start": "node ./bin/www",
+        "devstart": "nodemon ./bin/www",
+        "serverstart": "DEBUG=music-inventory:* npm run devstart"
+    },
+    "dependencies": {
+        "async": "^3.2.3",
+        "compression": "^1.7.4",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "^16.0.2",
+        "express": "~4.16.1",
+        "express-validator": "^6.14.0",
+        "helmet": "^5.0.2",
+        "http-errors": "~1.6.3",
+        "mongoose": "^6.2.7",
+        "morgan": "~1.9.1",
+        "multer": "^1.4.5-lts.1",
+        "pug": "2.0.0-beta11"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
 }
